@@ -26,7 +26,7 @@ app.use(cors());
 //   app.use(cors(corsOptions));
 
 // MONGODB_REMOTO
-mongoose.connect(process.env.DATABASE_HOST_NEW, {
+mongoose.connect(process.env.DATABASE_AULA, {
   // mongoose.connect('mongodb://localhost/ERP', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
