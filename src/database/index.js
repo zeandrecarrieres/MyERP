@@ -1,11 +1,9 @@
 const mongoose = require("mongoose")
-try {
-    // Connect to the MongoDB cluster
-    mongoose.connect(
-        process.env.DATABASE_HOST,
-        { useNewUrlParser: true, useUnifiedTopology: true }//, (response) => console.log(" Mongoose is connected - ", response)
-    );
-} catch (e) {
-    //console.log("could not connect", e);
+async function main() {
+    await mongoose.connect(process.env.DATABASE_LOCAL,
+        { useNewUrlParser: true, useUnifiedTopology: true }
+    )
+    console.log("MongoDB conectado")
 }
+main().catch((err) => { console.log(err) })
 module.exports = mongoose

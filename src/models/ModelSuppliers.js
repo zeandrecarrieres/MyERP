@@ -10,10 +10,6 @@ const SuppliersSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    nick: {
-      type: String,
-      required: false,
-    },
     name: {
       type: String,
       required: false,
@@ -22,36 +18,7 @@ const SuppliersSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    telephone: {
-      type: String,
-      required: false,
-    },
-
-    address: {
-      type: String,
-      required: false,
-    },
-    complement: {
-      type: String,
-      required: false,
-    },
-    district: {
-      type: String,
-      required: false,
-    },
-    city: {
-      type: String,
-      required: false,
-    },
-    state: {
-      type: String,
-      required: false,
-    },
-    postal: {
-      type: String,
-      required: false,
-    },
-    cnp: {
+    contact: {
       type: String,
       required: false,
     },
@@ -59,9 +26,9 @@ const SuppliersSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
-    site: {
-      type: String,
-      required: false,
+    registration: {
+      type: Number,
+      required: true
     }
   },
   {

@@ -18,6 +18,14 @@ const ClientSchema = new mongoose.Schema(
       type: String,
       required: false,
     },
+    contact: {
+      type: String,
+      required: false,
+    },
+    registration: {
+      type: Number,
+      required: true
+    }
   },
   {
     timestamps: false,
